@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ddd;
+}
+
+.container{
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    margin: 30px 0;
+}
+header h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+header p{
+    margin-top: 20px;
+}
+
+.bck{
+    background-color: #000;
+    color: #fff;
+    padding: 1px 7px 3px;
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+}
+
+
+.box, .posts{
+    background-color: #fff;
+    box-shadow: 2px 5px 8px  rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.boxText{
+    padding: 10px 20px;
+}
+
+.boxText h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.boxText .desc{
+    margin: 10px 0 30px 0;
+    font-size: 20px;
+}
+
+.date{
+    color: grey;
+}
+
+
+.btn{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.btn a:hover{
+    background-color: #ccc;
+}
+
+.boxText .myName{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.posts .heading{
+    background-color: #eee;
+    padding: 15px 0 15px 10px;
+}
+
+.posts .heading h3{
+    font-weight: normal;
+}
+
+
+.smallGrid{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: solid 1px #ccc;
+    gap: 15px;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.smallGrid img{
+    width: 50px;
+}
+
+.flexC{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grayB{
+    background-color: #000;
+    padding: 2px 5px;
+    margin: 5px;
+    color: #fff;
+}
+
+.gray{
+    background-color: #eee;
+    padding: 2px 5px;
+    margin: 5px;
+}
+
+
+footer{
+    background-color: rgb(54, 54, 54);
+    padding: 20px 0px 50px 10px;
+}
+
+
+footer .links button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+footer .links .prev{
+    background-color: grey;
+    color: #ddd;
+}
+
+footer .links .next{
+    background-color: #000;
+    color: #fff;
+}
+
+footer .links .prev:hover{
+    cursor: not-allowed;
+}
+
+footer .links .next:hover{
+   background-color: grey;
+   color: #000;
+   cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    section{
+        flex-direction: column;
+    }
+}
+
+
+.hiddenPara{
+    display: none;
+    margin-top: 20px;
+    background-color: skyblue;
+    padding: 10px;
+}
